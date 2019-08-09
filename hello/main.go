@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/go-msvc/domain"
 	"github.com/go-msvc/domain/server/rest"
 	"github.com/jansemmelink/log"
@@ -17,7 +19,9 @@ func main() {
 
 //Greet ...
 type greet struct {
-	Name string `json:"name"`
+	Name    string   `json:"name"`
+	Friends []string `json:"friends"`
+	Count   int      `json:"count"`
 }
 
 type greetResponse struct {
@@ -32,7 +36,9 @@ func (g greet) Validate() error {
 }
 
 func (g greet) Run() (domain.IResponse, error) {
-	return greetResponse{Message: "Hi " + g.Name + "!"}, nil
+	return greetResponse{
+		Message: fmt.Sprintf("Hi %s! %d greetings from %v!", g.Name, g.Count, g.Friends),
+	}, nil
 }
 
 //Sing ...
