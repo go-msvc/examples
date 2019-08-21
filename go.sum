@@ -1,4 +1,10 @@
+github.com/go-msvc/config v0.0.0-20190821043105-d3d5f0eb0c3f h1:gndjxcs4un0cxX7jDE6qhr+RGFUglr1RS6VE1m6H+80=
+github.com/go-msvc/config v0.0.0-20190821043105-d3d5f0eb0c3f/go.mod h1:PVnDzXXuUJv1JjfjNp//GvYhdsVctqIal5f1uw1NyWw=
 github.com/go-msvc/domain v0.0.0-20190809022353-1902575c4874 h1:K6IL5mrXcGckBrCnFnGWPspWJBiE8g1TFgtUEfPv6No=
 github.com/go-msvc/domain v0.0.0-20190809022353-1902575c4874/go.mod h1:TQmdCs9meMAwiO8mu4bWk6GxiGMgMOtlPLubHLaQCYg=
+github.com/go-msvc/domain v0.0.0-20190821043401-9f921a49997e h1:sFs+MZaHBDjJG1eVc7eL8GcXlIqpKG4UI72cLH2CzM8=
+github.com/go-msvc/domain v0.0.0-20190821043401-9f921a49997e/go.mod h1:5E1CDhb34ueUe7YTiWbE5bQsc5CfSX62w2CL0xaETGI=
 github.com/jansemmelink/log v0.3.0 h1:9VLc9thM0HeUQw808EN1jzqeLEUxwS3c6DgoNzSOtJc=
 github.com/jansemmelink/log v0.3.0/go.mod h1:4npzuSpVcgpimzy6N9b1E1yTv5L4QfZ2G0CzNDb+55M=
+github.com/mdaverde/jsonpath v0.0.0-20180315003411-f4ae4b6f36b5 h1:+J/mbR+mkR3z1XO500DIMAKIxVRGll9IW6c0rLgkrwI=
+github.com/mdaverde/jsonpath v0.0.0-20180315003411-f4ae4b6f36b5/go.mod h1:rs1SQV0LEG9i85G47J6dBtmCUd8j7wC3av/IFsfYV/k=

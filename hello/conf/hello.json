@@ -1,0 +1,10 @@
+{
+    "server":{
+        "rest":{
+            "addr":"localhost:12345"
+        },
+        "nats":{
+            "url":"localhost:4222"
+        }
+    }
+}

@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/go-msvc/config"
+	"github.com/go-msvc/config/source/files"
+	"github.com/go-msvc/config/source/static"
 	"github.com/go-msvc/domain"
 	"github.com/go-msvc/domain/server/rest"
 	"github.com/jansemmelink/log"
@@ -10,10 +13,16 @@ import (
 
 func main() {
 	log.DebugOn()
+
+	config := config.NewSources().
+		With(files.New("./conf")).
+		//default static config used if not found in above config sources
+		With(static.New("server.a.b.rest", rest.Config{Address: "localhost:12345"}))
+
 	domain.New("hello").
 		WithOper("greet", greet{}).
 		WithOper("sing", sing{}).
-		WithConfig("rest", rest.Config{Address: "localhost:12345"}).
+		WithConfig(config).
 		Run()
 }
 
