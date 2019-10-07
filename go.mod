@@ -7,3 +7,7 @@ require (
 	github.com/go-msvc/domain v0.0.0-20190821043401-9f921a49997e
 	github.com/jansemmelink/log v0.3.0
 )
+
+replace github.com/go-msvc/config => ../config
+
+replace github.com/go-msvc/domain => ../domain

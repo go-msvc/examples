@@ -1,6 +1,6 @@
 {
-  "a":{
-      "b":{
+  "hello":{
+      "server":{
           "rest":{
             "addr":"localhost:10000"
           }
