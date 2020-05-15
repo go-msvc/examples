@@ -8,6 +8,9 @@ import (
 //no request params and constant response
 type singRequest struct{}
 
-func (s singRequest) Exec() domain.Result {
-	return domain.Success("La-la-la", nil)
+func (s singRequest) Exec(domain.Context, domain.IRequest) domain.IOutcome {
+	return domain.NewOutcome(
+		nil,        //result code
+		"la-la-la", //response
+		nil)        //audit
 }
